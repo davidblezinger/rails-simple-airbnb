@@ -1,0 +1,14 @@
+  <%= link_to "back to all flats", flats_path %>
+  <div class="card" style="width: 400px;">
+    <div class="card-body">
+      <h5 class="card-title"><%= @flat.name %></h5>
+      <p class="card-text"><%= @flat.address %></p>
+      <p class="card-text">Price: <%= @flat.price_per_night %></p>
+      <p class="card-text">Guests: <%= @flat.number_of_guests %></p>
+    </div>
+  </div>
+  <div class="card" style="width: 400px;">
+    <div class="card-body">
+      <p class="card-text"><%= @flat.description %></p>
+    </div>
+  </div>
